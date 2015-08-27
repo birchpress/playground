@@ -1,1 +1,1 @@
-# Playground
+# Code playground for everyone
