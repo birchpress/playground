@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datatable - Load via AJAX JSON</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.8/css/jquery.dataTables.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://cdn.datatables.net/1.10.8/js/jquery.dataTables.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+			$('#example').DataTable({
+				"ajax": './data.json',
+                "columns": [
+                    { title: 'Name' },
+                    { title: 'Position' },
+                    { title: 'Office' },
+                    { title: 'Extn.' },
+                    { title: 'Start Date' },
+                    { title: 'Salary' }
+                ]	
+			});
+        });
+    </script>
+</head>
+<body style="font-family: OpenSans, sans-serif; font-size: 14px;">
+    <table id="example" class="display" cellspacing="0" width="100%">
+
+    </table>
+</body>
+</html>
