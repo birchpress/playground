@@ -1,0 +1,4 @@
+cron:
+- description: wordpress-multisite cron tasks
+  url: /wp-cron-multisite.php
+  schedule: every 15 minutes
